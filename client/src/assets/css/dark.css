@@ -5243,11 +5243,14 @@ ul.profile-menu {
 .ui-steps-prev {
   display: inline-flex;
   align-items: center;
-  cursor: pointer;
   color: #88989b !important; }
-  .ui-steps-next:hover,
-  .ui-steps-prev:hover {
+  .ui-steps-next:not(.ui-state-disabled):hover,
+  .ui-steps-prev:not(.ui-state-disabled):hover {
+    cursor: pointer;
     color: #479cc8 !important; }
+  .ui-steps-next.ui-state-disabled,
+  .ui-steps-prev.ui-state-disabled {
+    color: rgba(136, 152, 155, 0.5) !important; }
   .ui-steps-next .material-icons, .ui-steps-next .fc-prev-button .ui-icon, .fc-prev-button .ui-steps-next .ui-icon, .ui-steps-next
   .fc-next-button .ui-icon,
   .fc-next-button .ui-steps-next .ui-icon,

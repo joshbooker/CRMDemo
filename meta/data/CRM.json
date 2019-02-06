@@ -3,7 +3,7 @@
     "title": "CRM",
     "x-type": "odata",
     "x-connector": "mssql",
-    "x-connector-version": 14
+    "x-connector-version": 11
   },
   "definitions": {
     "Contact": {
